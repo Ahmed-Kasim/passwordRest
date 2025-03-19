@@ -1,0 +1,6 @@
+com\CodeQuest\passwordRest\controller\OtpController.class
+com\CodeQuest\passwordRest\repository\OtpRepository.class
+com\CodeQuest\passwordRest\entities\OtpCode.class
+com\CodeQuest\passwordRest\PasswordRestApplication.class
+com\CodeQuest\passwordRest\service\OtpService.class
+com\CodeQuest\passwordRest\config\MailConfig.class
