@@ -25,17 +25,5 @@ public class OtpController {
         boolean isValid = otpService.verifyOtp(email, otp);
         return isValid ? ResponseEntity.ok("OTP verified!") : ResponseEntity.badRequest().body("Invalid OTP!");
     }
-
-    // Verifies OTP and proceeds with user registration
-    @PostMapping("/verify-and-register")
-    public ResponseEntity<String> verifyAndRegister(@RequestParam String email, @RequestParam String otp) {
-        boolean isValid = otpService.verifyOtp(email, otp);
-        if (!isValid) {
-            return ResponseEntity.badRequest().body("Invalid OTP!");
-        }
-
-        // If OTP is valid, call User API to create account
-        // You need to implement the logic here to register the user
-        return ResponseEntity.ok("OTP verified! User can be registered.");
-    }
+    
 }
