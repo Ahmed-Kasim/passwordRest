@@ -25,5 +25,5 @@ public class OtpController {
         boolean isValid = otpService.verifyOtp(email, otp);
         return isValid ? ResponseEntity.ok("OTP verified!") : ResponseEntity.badRequest().body("Invalid OTP!");
     }
-    
+
 }
